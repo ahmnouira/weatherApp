@@ -1,0 +1,31 @@
+<br>
+<div class="ui text container">
+    <form [formGroup]="forecastForm" class="ui form" novalidate>
+        <div class="grouped fields">
+            <h2 class="ui dividing header"> Forecsat Type</h2>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" formControlName="forecastType" name="forecastType" value="daily" checked>
+                    <label>Daily</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" formControlName="forecastType" name="forecastType" value="hourly">
+                    <label>Hourly</label>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label class="">Location: </label>
+            <div class="ui input focus">
+                <input type="text" name="location" formControlName="location" placeholder="location...">
+            </div>
+            <small [hidden]="forecastForm.controls.location.valid"> Enter a Valide Location </small>
+        </div>
+        <button type="button" (click)="getForecast(forecastForm)" [disabled]="!forecastForm.controls.location.valid" class="ui button"><i class="cloud upload icon"></i>Get Weather</button>
+    </form>
+    <div class="" *ngIf="weatherResult">
+        <div [chart]="chart"></div>
+    </div>
+</div>

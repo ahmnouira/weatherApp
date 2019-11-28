@@ -1,0 +1,22 @@
+<br>
+<div class="ui text container">
+  <form [formGroup]="weatherForm" class="ui form">
+    <h2 class="ui dividing header">Enter Location:</h2>
+    <div class="field">
+      <input type="text" formControlName="location" name="location" placeholder="Enter Location..." autofocus >     
+      <small style="color: red;" [hidden]="weatherForm.controls.location.valid"> Enter a Valide Location </small>
+    </div> 
+    <button type="button" (click)="getWeather(weatherForm)" [disabled]="!weatherForm.controls.location.valid" class="ui button"><i class="cloud upload icon"></i>Get Weather</button> 
+  </form>
+
+  <div *ngIf="weatherResult">
+    <br>
+    <h3 class="ui header">Right Now</h3>
+      <p> {{currentWeather.summary}} &nbsp;<i class="{{icon}} icon"></i></p>
+        <span>Feels like {{currentWeather.temperature}}&deg;</span><br>
+        <span>Dew point: {{currentWeather.dewPoint}}</span><br>
+        <span>Humidity: {{currentWeather.humidity}}%</span><br>
+        <span>Visibility: {{currentWeather.visibility}} mi</span><br>
+        <span>Pressure: {{currentWeather.pressure}} mb</span>
+    </div>
+</div>

@@ -1,6 +1,11 @@
 {
   "name": "weather-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "weather application using angular",
+  "author": {
+    "name": "Ahmed Nouira",
+    "email": "ahmnouira@gmail.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,6 +24,8 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "angular-highcharts": "^8.0.3",
+    "highcharts": "^7.2.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
