@@ -1,6 +1,6 @@
 # weatherApp
 
-* weather Application using Angular, and REST web service to get geocoding of a location and then retrivce the weather, humdity and other usefuly data and display it in charts. 
+* Weather Application using [Angular](https://angular.io/) font-end framework, styling with [semantic-ui](https://semantic-ui.com/), this app uses REST web service to get **geocoding** of a location and then retrieve the weather, humdity and other usefuly data and display it in charts using [angular-hightcharts](https://www.npmjs.com/package/angular-highcharts) libary. 
 
 ### Overview 
 
