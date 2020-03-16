@@ -8,7 +8,7 @@
 /bazel-out
 
 # react-native  expo project 
-.expo/*
+.expo
 *.jks
 *.p8
 *.p12
