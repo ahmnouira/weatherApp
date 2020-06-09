@@ -14,7 +14,7 @@ export class WeatherComponent implements OnInit {
 
   weatherForm : FormGroup;  // weather Page Form
   currentWeather :  any;    // store the data comes form darksky API
-  weatherResult : boolean;  // 
+  weatherResult : boolean;  
   geometry : Place;
   icon : string;
 
@@ -48,9 +48,7 @@ export class WeatherComponent implements OnInit {
         } else if  (String(this.currentWeather.summary).toLowerCase().indexOf("thunderstorm") > 0 ) {
           this.icon = "thumbtack"
         }
-
        
-
        });
 
       });

@@ -6,6 +6,8 @@
 
 ![hourly](img/hourly.png)
 
+![daily](img/daily.png)
+
 
 ## Development server
 
