@@ -1,5 +1,5 @@
 {
-  "proxy": "https://www.metaweather.com", 
+  "porxy": "https://metaweather.com",
   "main": "node_modules/expo/AppEntry.js",
   "version": "1.0.0",
   "author": {
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@expo/webpack-config": "^0.12.12",
     "babel-preset-expo": "~8.0.0"
   }
 }

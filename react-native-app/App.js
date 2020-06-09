@@ -19,7 +19,7 @@ export default class App extends React.Component {
 
   // lifecycle method: this method will fire after the component is mounted, used for asynchrouns requests
   componentDidMount() {
-    this.handleUpdateLocation('Monastir');
+    this.handleUpdateLocation('London');
   }
 
   handleUpdateLocation = async city => {
