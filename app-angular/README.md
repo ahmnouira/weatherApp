@@ -4,10 +4,10 @@
 
 ### Overview 
 
-![hourly](img/hourly.png)
-
-![daily](img/daily.png)
-
+<p align="center">
+	<img src="./img/hourly.png" alt="hourly" width="48%" / >
+	<img src="./img/daily.png" alt="daily" width="48%" / >
+</p>
 
 ## Development server
 
